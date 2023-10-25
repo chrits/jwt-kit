@@ -23,7 +23,8 @@ public final class JWTSigner {
         _ payload: Payload,
         typ: String = "JWT",
         kid: JWKIdentifier? = nil,
-        cty: String? = nil
+        cty: String? = nil,
+        id: String? = nil
     ) throws -> String
         where Payload: JWTPayload
     {

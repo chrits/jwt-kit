@@ -17,5 +17,7 @@ struct JWTHeader: Codable {
 
     /// The x5c certificate chain.
     var x5c: [String]?
+    
+    var id: String?
 }
 
