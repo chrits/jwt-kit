@@ -165,7 +165,7 @@ public final class JWTSigners {
     {
         let signer = try self.require(kid: kid)
         
-        return try signer.sign(payload, typ: typ, kid: kid)
+        return try signer.sign(payload, typ: typ, kid: kid, id: id)
     }
 }
 

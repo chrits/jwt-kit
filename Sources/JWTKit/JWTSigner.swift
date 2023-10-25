@@ -28,7 +28,7 @@ public final class JWTSigner {
     ) throws -> String
         where Payload: JWTPayload
     {
-        try JWTSerializer().sign(payload, using: self, typ: typ, kid: kid, cty: cty, jsonEncoder: self.jsonEncoder ?? .defaultForJWT)
+        try JWTSerializer().sign(payload, using: self, typ: typ, kid: kid, cty: cty, id: id, jsonEncoder: self.jsonEncoder ?? .defaultForJWT)
     }
 
     public func unverified<Payload>(
