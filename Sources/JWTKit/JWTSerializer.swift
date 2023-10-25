@@ -4,7 +4,7 @@ struct JWTSerializer {
     func sign<Payload>(
         _ payload: Payload,
         using signer: JWTSigner,
-        typ: String = "JWT",
+        typ: String? = nil,
         kid: JWKIdentifier? = nil,
         cty: String? = nil,
         id: String? = nil,

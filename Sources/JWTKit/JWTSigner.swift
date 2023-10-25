@@ -21,7 +21,7 @@ public final class JWTSigner {
 
     public func sign<Payload>(
         _ payload: Payload,
-        typ: String = "JWT",
+        typ: String? = nil,
         kid: JWKIdentifier? = nil,
         cty: String? = nil,
         id: String? = nil
